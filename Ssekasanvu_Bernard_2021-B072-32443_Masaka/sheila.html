@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sheila Pink@ fashionStar</title>
+    <link rel="stylesheet" href="sheila.css">
+</head>
+<body>
+
+    <header>
+        <h1>SHEILA PINK</h1>
+        <p><b>FashionStar & Professional Model</b></p>
+    </header>
+
+    <nav class="topnav">
+        <a href="#">Home</a>
+        <a href="#">Clothing</a>
+        <a href="#">Trends</a>
+        <a style="color: #ecb2e8;" href="#">Book as Chief Guest</a>
+        <a href="#">About Us</a>
+       
+        </div>
+        <div class="search-container">
+            <form action="#">
+                <input type="text" placeholder="Search fashion..." name="search">
+            </form>
+        </div>
+       
+    </nav>
+    
+
+    <main>
+        <section class="profile-container">
+            <h2 style="color: #93c7e9;"><a>Follow @sheilapink</a></h2>
+            <div class="profile-container">
+                <img class="profile" src="4.jpg" alt="Dress">
+              
+                <h1 style="color: #ecb2e8;">Sheila Pink</h1>
+                <h3>Professional <b>FashionStar</b> and Brand Ambassador of everal trending Fashion Brands👌</h3>
+                <h3><b>Prefessional Model</b> With various Awards</h3>
+                <h4>Iam a 22 year old American.</h4>
+                
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color: #3498db;">Achievements</h2>
+            <div class="product">
+                <img src="4.jpg" alt="afrimma-fashion award">
+                <div class="product-description">
+                    <p><strong>MTV-Fashion Star Of the Year 2020</strong></p>
+                    <p>Sheila Pink shines up with the biggest award across the globe >> MTV Award winner <b>(Fashion Star of the Year 2020)</b></p>
+                    <button class="download-btn" onclick="downloadFile('dress_manual.pdf')">Download Manual</button>
+                </div>
+            </div>
+            <div class="product">
+                <img src="model.jpg" alt="Stylish Top">
+                <div class="product-description">
+                    <p><strong>Also a professional model</strong></p>
+                    <p>Shiela makes a good model at Americans GOAT Talents</p>
+                    <button class="download-btn" onclick="downloadFile('top_manual.pdf')">Download Manual</button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <h2 style="color: #3498db;">Featured Styles</h2>
+            <!-- Slideshow with different fashion photos -->
+            <div class="slideshow-container">
+                <img class="mySlides" src="model.jpg" alt="Dress">
+                <img class="mySlides" src="3.jpg" alt="Top">
+                <img class="mySlides" src="clot1.jpg" alt="Bottom">
+                
+            </div>
+        </section>
+
+        <section class="fashion-icons">
+            <h2 style="color: #3498db;">Discover Your Style</h2>
+            <div class="fashion-icon">
+                <i class="fas fa-heart"></i>
+                <p>Classic </p>
+            </div>
+            <div class="fashion-icon">
+                <i class="fas fa-gem"></i>
+                <p>Elegant</p>
+            </div>
+            <div class="fashion-icon">
+                <i class="fas fa-star"></i>
+                <p>Trendy </p>
+            </div>
+            <div class="fashion-icon">
+                <i class="fas fa-fire"></i>
+                <p>Hot😍</p>
+            </div>
+        </section>
+
+      
+
+    </main>
+
+    <footer class="footer">
+        <div class="footer-links">
+            <a href="#">Home</a>
+            <a href="#">Clothing</a>
+            <a href="#">Trends</a>
+            <a href="#">About Us</a>
+            <a href="#">Contact</a>
+        </div>
+        <div class="contact-info">
+            <p>Email: shelapink@gmail.com</p>
+            <p>Phone: +256 456-7890</p>
+        </div>
+        <div class="copyright">
+            &copy; 2023 <b>sheilapink.</b> All rights reserved.
+        </div>
+    </footer>
+
+    <script>
+        // ... (Your existing script) ...
+        // Updated downloadFile function
+        function downloadFile(filePath) {
+            // You can implement file download logic here
+            window.location.href = filePath;
+        }
+    </script>
+
+    <script>
+        // Image slideshow functionality
+        let slideIndex = 0;
+
+        function showSlides() {
+            let i;
+            const slides = document.getElementsByClassName("mySlides");
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1
+            }
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 2000); // Change slide every 2 seconds
+        }
+
+        // Start the slideshow when the page loads
+        window.onload = function () {
+            showSlides();
+        };
+    </script>
+
+</body>
+</html>
